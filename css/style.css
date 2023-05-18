@@ -7,6 +7,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 200;
+    cursor: url(../img/imagen1.gif) url();
 }
 
 
@@ -25,7 +26,7 @@ p{
     height: 150px;
     background-image: url(/img/banner.JPG);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 
@@ -38,10 +39,19 @@ h3{
 .container{
     height: 150px;
     padding: 2px 16px;
+    background-color: white;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: #17587D;
+    row-gap: 20px;
+}
 
 .cards{
+    display: flex;
+    justify-content: space-around;
     margin-top: 60px;
 }
 .card {     
@@ -54,57 +64,68 @@ h3{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.card img{
-   
-    width: 100%;
+.card div{
+    width: 200px;
+    height: 200px;
 }
 
-/* Herramientas */
+.foto {
+    background-size: cover;
+}
 
+.dulce{
+    background-image: url(/img/Dulce.jpg);
+}
 
+.dulce:hover{
+    background-image: url(/img/chocobo-dulce.jpg);
+}
 
+.ana{
+    background-image: url(/img/Ana.jpg);
+}
 
+.ana:hover{
+    background-image: url(/img/chocobo-ana.jpg);
+}
 
+.irene{
+    background-image: url(/img/Irene.jpg);
+}
 
+.irene:hover{
+    background-image: url(/img/chocobo-irene.jpg);
+}
 
+.logos, .emoticonos {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #073955;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
+.emoticonos {
+    margin-bottom: 20px;
+}
 
+.emoticonos img {
+    filter: grayscale(1);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* emojis */
-
-
-
-
-
-/* pie de página */
-
-footer{
-    bottom: 0;
-    position: fixed;
+footer {
+    height: 66px;
+    background-color: #3556E3;
 }
 
 footer p{
+    color: black;
     font-size: 16px;
+    line-height: 60px;
+    text-align: left;
+    margin-left: 300px;
+}
+
+.emoticonos img.quitarGris {
+    filter: grayscale(0);
 }
